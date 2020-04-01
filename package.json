@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "jest --coverage",
-    "build": "./node_modules/.bin/babel src -d lib",
+    "build": "babel src -d lib",
     "prepack":"npm run-script build",
     "docs": "jsdoc2md -f src/*.js -c docs/jsdoc.conf > docs/reference/index.md"
   },
